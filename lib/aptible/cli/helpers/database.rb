@@ -96,7 +96,8 @@ module Aptible
           broadwayjoe_ssh_command(database.account) + [
             '-o', 'SendEnv=ACCESS_TOKEN',
             '-o', 'SendEnv=APTIBLE_DATABASE',
-            '-o', 'Compression=yes'
+            '-o', 'Compression=yes',
+            '-o', 'IPQoS=lowdelay'
           ]
         end
       end
