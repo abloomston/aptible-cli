@@ -95,7 +95,8 @@ module Aptible
         def ssh_args(database)
           broadwayjoe_ssh_command(database.account) + [
             '-o', 'SendEnv=ACCESS_TOKEN',
-            '-o', 'SendEnv=APTIBLE_DATABASE'
+            '-o', 'SendEnv=APTIBLE_DATABASE',
+            '-o', 'Compression=yes'
           ]
         end
       end
