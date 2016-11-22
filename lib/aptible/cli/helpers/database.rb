@@ -97,7 +97,7 @@ module Aptible
             '-o', 'SendEnv=ACCESS_TOKEN',
             '-o', 'SendEnv=APTIBLE_DATABASE',
             '-o', 'Compression=yes',
-            '-o', 'IPQoS=lowdelay'
+            '-o', 'IPQoS=throughput'
           ]
         end
       end
